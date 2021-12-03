@@ -1,0 +1,94 @@
+div.image
+{
+    position: absolute;
+    top: 10px;
+    left: 11px;
+}
+
+div.bg-color
+{
+    position: relative;
+    width: 1940px;
+    height: 1148px;
+    background-color: #00817B;
+    margin-right: 14px;
+    box-shadow: 12px 0px 3px rgba(0, 0, 0, 0.40);
+    top: 0;
+    left: 0;
+}
+
+div.text-box
+{
+    position: absolute;
+    white-space: 0px;
+    width: fit-content;
+    top: 400px;
+    left: 389px;
+}
+
+div.text-box2
+{
+    position: absolute;
+    white-space: 0px;
+    width: fit-content;
+    top: 1090px;
+    left: 154px;
+    font-family: "Helvetica";
+    font-size: 20px;
+    color: white;
+}
+
+div.horse
+{
+    position: absolute;
+    top: 920px;
+    left: 150px;
+}
+
+div.text-box3
+{
+    position: absolute;
+    white-space: 0px;
+    top: 1090px;
+    left: 1536px;
+    color: #FBAE17;
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+
+div.button
+{
+    position: absolute;
+    white-space: 0px;
+    top: 385px;
+    left: 1405px;
+}
+
+p
+{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+span.vert
+{
+    color: #CCCCCC;
+}
+
+@font-face 
+{
+    font-family: "Helvetica";
+    src: url(".../fonts/Helvetica.ttf") format("truetype");
+    src: url(".../fonts/Helvetica.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face 
+{
+    font-family: "HelveticaBold";
+    src: url(".../fonts/Helvetica_bd.ttf") format("truetype");
+    src: url(".../fonts/Helvetica_bd.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
