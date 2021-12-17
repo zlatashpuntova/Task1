@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Test Front End</title>
+</head>
+<body>
+        <div class="image">
+             <img src="img/beach_scene.JPG" height="1148px" width="2048px">
+        </div>
+
+        <div class="table">
+            <table class="tab">
+                <tr>
+                    <th>
+                        Стартовое значение
+                    </th>
+                    <td>
+                        <input type="text" id="startNum">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Процент
+                    </th>
+                    <td>
+                        <input type="text" id="percentage" maxlength="3" size="15px"> %
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">
+                        Предсказанное 
+                        значение
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        Месяц 1
+                    </th>
+                    <td>
+                        <div id="div1"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Месяц 2
+                    </th>
+                    <td>
+                        <div id="div2"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Месяц 3
+                    </th>
+                    <td>
+                        <div id="div3"></div>
+                    </td>
+                </tr>
+            </table>
+            <input type="button" id="button" onclick="numbers();" value="Выполнить">
+        </div>
+
+        <div class="container-animation" style="width: 1940px; height: 1148px;">
+            <div id="train" class="wrapper-animation">
+                <div class="bg-color"></div>
+
+                <div class="wrapper">
+                    <div class="one">HELP PROTECT</div>
+                    <div class="two">CAN YOU SPOT THE</div>
+                    <div class="three"></div>
+                    <div class="four">YOUR TRAVELLERS</div>
+                    <div class="five">HEPATITIS RISKS</div>
+                    <div class="six">IN THE FOLLOWING VIDEO?</div>
+                </div>
+                <div class="text-box2">
+                    <p>Dzerzhinskogo av. 57, Minsk Belarus</p>
+                    <p>@ Oxagile, 2020</p>
+                </div>
+
+                <div class="text-box3">
+                    <p><a href="#">Prescribing information</a><span class="vert">|</span><a href="#">References</a></p>
+                </div>
+                <button type="submit" id="submit">
+                    <div class="button">
+                <img src="img/button.png">
+                </div>
+                </button>
+                <div class="horse">
+                    <img src="img/horse.png">
+                </div>
+            </div>
+        </div>
+
+               
+        <script>
+            submit.onclick = function() {
+                let start = Date.now();
+
+                let timer = setInterval(function() {
+                let timePassed = Date.now() - start;
+
+                train.style.right = timePassed / 1 + 'px';
+
+                if (timePassed > 2000) clearInterval(timer);
+
+                }, 20);
+            }
+        </script>
+       <script src="script.js"></script>
+</body>
+</html>
