@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Test Front End</title>
+</head>
+<body>
+
+        <div class="image">
+             <img src="img/beach_scene.JPG" height="1148px" width="2048px">
+        </div>
+
+        <div class="wrapper-tab">
+            <div class="one-tab item">Стартовое значение</div>
+            <div class="two-tab item"> <input type="text" id="startNum" size="20px"></div>
+            <div class="three-tab item">Процент</div>
+            <div class="four-tab item"><input type="text" id="percentage" maxlength="3" size="15px"> %</div>
+            <div class="five-tab item">Предсказанное</div>
+            <div class="six-tab item">значение</div>
+            <div class="seven-tab item">Месяц 1</div>
+            <div class="eight-tab item"><div id="div1"></div></div>
+            <div class="nine-tab item">Месяц 2</div>
+            <div class="ten-tab item"><div id="div2"></div></div>
+            <div class="eleven-tab item">Месяц 3</div>
+            <div class="twelve-tab item"><div id="div3"></div></div>
+            <input type="button" id="button" value="Выполнить">
+        </div>
+
+        <div class="container-animation" style="width: 1940px; height: 1148px;">
+            <div id="train" class="wrapper-animation">
+                <div class="bg-color"></div>
+                <div class="wrapper">
+                    <div class="one">HELP PROTECT</div>
+                    <div class="two">CAN YOU SPOT THE</div>
+                    <div class="three"></div>
+                    <div class="four">YOUR TRAVELLERS</div>
+                    <div class="five">HEPATITIS RISKS</div>
+                    <div class="six">IN THE FOLLOWING VIDEO?</div>
+                </div>
+                <div class="text-box2">
+                    <p>Dzerzhinskogo av. 57, Minsk Belarus</p>
+                    <p>@ Oxagile, 2020</p>
+                </div>
+
+                <div class="text-box3">
+                    <p><a href="#">Prescribing information</a><span class="vert">|</span><a href="#">References</a></p>
+                </div>
+                <button type="submit" id="submit">
+                    <div class="button">
+                        <img src="img/button.png" class="img-button">
+                    </div>
+                </button>
+                <div class="horse">
+                    <img src="img/horse.png" class="img-horse">
+                </div>
+            </div>
+        </div>
+               
+    <script>
+        submit.onclick = function() {
+            let start = Date.now();
+
+            let timer = setInterval(function() {
+            let timePassed = Date.now() - start;
+
+            train.style.right = timePassed / 1 + 'px';
+
+            if (timePassed > 2000) clearInterval(timer);
+
+            }, 20);
+            }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
